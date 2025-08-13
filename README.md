@@ -92,10 +92,24 @@ meemipankki/
 - WebP (.webp)
 
 ### Adding New Images
-Simply drop new image files into the `images/` directory. The application will:
-- Auto-detect new files
-- Sort by modification date (newest first)
-- Generate readable titles from filenames
+
+Simply drop new image files into the images/ directory. The application will:
+
+    Auto-detect new files
+
+    Sort by modification date (newest first)
+
+    Generate readable titles from filenames
+
+Other methods:
+
+    SFTP Upload: Connect to the host using an SFTP client and upload images directly to the images/ directory.
+
+    Network Share Upload: Access the folder from another PC:
+
+        Windows: \\host_ip\MeemipankkiImages
+
+        Linux: smb://host_ip/MeemipankkiImages
 
 ### Filename Conventions
 For better titles, use descriptive filenames:
